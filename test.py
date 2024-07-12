@@ -118,7 +118,7 @@ for i in range(10):
     print("최종 결과:")
     print(new_line)
 
-    output_file_path = r'C:\Users\82109\Desktop\트러스트랩\final/%d_Out.txt' % i
+    output_file_path = r'<저장할 위치 및 파일 이름>.txt' % i
     with open(output_file_path, "w", encoding='utf-8') as file:
         file.write(new_line)
 
