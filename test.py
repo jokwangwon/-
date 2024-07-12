@@ -1,7 +1,7 @@
 import numpy as np
 
 for i in range(10):
-    file_path = r'C:\Users\82109\Desktop\트러스트랩\original/000%d.txt' % i
+    file_path = r'<해당 코드 주소>.txt' % i
     try:
         with open(file_path, 'rt', encoding='utf-8') as f:
             line = f.read()
