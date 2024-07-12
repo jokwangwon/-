@@ -1,7 +1,7 @@
 import re
 
 for i in range(10):
-    file_path = r'C:\Users\82109\Desktop\트러스트랩\final\%d_Out.txt' % i
+    file_path = r'<test.py에서 저장된 파일경로>' % i
     try:
         with open(file_path, 'rt', encoding='utf-8') as f:
             RG_line = f.read()
@@ -12,7 +12,7 @@ for i in range(10):
     cleaned_line = re.sub(r'o/|n/|d/|\(\)|\)|\(|/', '', RG_line)
     cleaned_line = re.sub(r'\s+', ' ', cleaned_line).strip()  
 
-    output_file_path = r'C:\Users\82109\Desktop\트러스트랩\clean\%d_cleaned.txt' % i
+    output_file_path = r'<마무리된 파일 저장할 위치 및 파일 이름>' % i
     with open(output_file_path, 'w', encoding='utf-8') as file:
         file.write(cleaned_line)
         
